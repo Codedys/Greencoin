@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    background-color: rgb(248,250,252)
+  }
+  .active-link {
+    border-bottom-width: 4px;
+    border-bottom-color: #4299e1; 
+    border-bottom-style: solid;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
