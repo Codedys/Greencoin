@@ -90,7 +90,11 @@
       >
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="https://github.com/Gerald-006" target="_blank" class="text-4xl hover:text-8xl transition-all duration-500 ease-in-out">
+      <a
+        href="https://github.com/Gerald-006"
+        target="_blank"
+        class="text-4xl hover:text-8xl transition-all duration-500 ease-in-out"
+      >
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -115,4 +119,3 @@ export default {
   },
 };
 </script>
-
