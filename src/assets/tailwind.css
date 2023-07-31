@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 body {
-    background-color: rgb(248,250,252)
+    background-color: rgb(248,250,252);
+    padding-top: 3rem;
   }
   .active-link {
     border-bottom-width: 4px;
@@ -11,3 +12,13 @@ body {
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
   }
+  
+.customcolor{
+    background-color: rgb(59,130,246);
+}
+
+.text-custom-blue {
+    color: rgb(122, 136, 156);
+  }
+  
+  
