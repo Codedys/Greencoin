@@ -19,12 +19,14 @@
       <button  class="text-xl p-4 border-2 bg-white rounded-lg text-black">
         Resume
       </button>
-      <button @click="displayForm" @closeForm="displayForm" class="customcolor text-xl p-4 text-white rounded-lg">
+      
+      <button @click="displayForm"  class="customcolor text-xl p-4 text-white rounded-lg">
         Contact me
       </button>
+      
     </div>
      <div v-if="showForm">
-    <contactForm :hide="showForm"/>
+    <contactForm @closeForm="displayForm"/>
   </div>
   </div>
   
@@ -45,10 +47,7 @@ export default {
   methods: {
     displayForm() {
       this.showForm = !this.showForm
-    },
-    closeForm() {
-      this.showForm = !this.showForm
-    },
+    }
   },
 
 

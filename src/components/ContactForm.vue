@@ -41,7 +41,6 @@
 
 <script>
 export default {
-  props: ['hide'], // Define the 'message' prop
   methods: {
     hideForm() {
       this.$emit('closeForm');
