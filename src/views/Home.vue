@@ -5,7 +5,7 @@
       alt="Trust me I am handsome"
       class="rounded-full h-44 w-44 mt-8 mx-auto border-8 border-blue-600"
     />
-    <div class="text-center pt-8 text-lg mx-auto">
+    <div class="text-center pt-8 text-lg ">
       <h1><strong>Hello,I'm Jackson</strong></h1>
       <p>
         I am a software engineer currently pursuing Computer Science at Kenyatta
@@ -16,12 +16,41 @@
       </p>
     </div>
     <div class="mt-8 space-x-10 flex items-center justify-center">
-      <button class="text-xl p-4 border-2 bg-white rounded-lg text-black">
+      <button  class="text-xl p-4 border-2 bg-white rounded-lg text-black">
         Resume
       </button>
-      <button class="customcolor text-xl p-4 text-white rounded-lg">
+      <button @click="displayForm" @closeForm="displayForm" class="customcolor text-xl p-4 text-white rounded-lg">
         Contact me
       </button>
     </div>
+     <div v-if="showForm">
+    <contactForm :hide="showForm"/>
   </div>
+  </div>
+  
 </template>
+
+
+<script>
+import ContactForm from '../components/ContactForm.vue'
+export default {
+  name:"Home",
+  components: { ContactForm },
+  data() {
+    return {
+      showForm: false,
+    
+    };
+  },
+  methods: {
+    displayForm() {
+      this.showForm = !this.showForm
+    },
+    closeForm() {
+      this.showForm = !this.showForm
+    },
+  },
+
+
+}
+</script>
