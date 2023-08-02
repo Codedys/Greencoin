@@ -6,7 +6,7 @@
       class="rounded-full h-44 w-44 mt-8 mx-auto border-8 border-blue-600"
     />
     <div class="text-center pt-8 text-lg ">
-      <h1><strong>Hello,I'm Jackson</strong></h1>
+      <h1><strong>Hello,I'm Jackson 👋</strong></h1>
       <p>
         I am a software engineer currently pursuing Computer Science at Kenyatta
         University.<br />

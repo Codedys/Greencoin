@@ -42,7 +42,7 @@
   </header>
 
   <router-view />
-  <footer class="ml-80 mr-80 border-t-4 mt-8">
+  <footer class="mx-auto h-full w-full md:w-1/2 border-t-4 mt-8">
     <div class="flex mt-16">
       <div class="ml-8 flex flex-col space-y-4 justify-start">
         <h4 class="text-lg font-bold">PAGES</h4>
