@@ -16,6 +16,9 @@ body {
 .customcolor{
     background-color: rgb(59,130,246);
 }
+.custombackground{
+  background-color:rgb(230, 237, 253);
+}
 
 .text-custom-blue {
     color: rgb(122, 136, 156);

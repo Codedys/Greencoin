@@ -1,9 +1,18 @@
 <template>
-  <header
+  <!-- start of navigation bar -->
+   <div v-if="!headerBar">
+    <NavBarResponsive @closeBar="toggleNavbar"/>
+   </div>
+   <header v-if="headerBar"
     class="fixed top-0 left-0 right-0 z-10 flex items-center bg-white h-12 border-b-2 bg-opacity-95"
   >
-    <nav class="flex justify-center flex-1">
-      <div class="space-x-16 text-base">
+  
+  <div class="visible flex justify-start md:invisible ml-6">
+    <i @click="toggleNavbar" class=" fa-solid fa-bars"></i>
+  </div>
+
+    <nav class=" invisible flex justify-center flex-1 md:visible">
+      <div class="md:space-x-16 text-base">
         <router-link
           to="/"
           class="p-3 hover:bg-blue-300 hover:rounded"
@@ -35,15 +44,16 @@
       </div>
     </nav>
 
-    <div @click="toggleMode" class="flex justify-end mr-20">
+    <div @click="toggleMode" class="flex justify-end mr-8">
       <i v-if="lightMode" class="far fa-lightbulb text-lg"></i>
       <i v-if="darkMode" class="fas fa-lightbulb text-lg"></i>
     </div>
   </header>
-
+  
   <router-view />
+  <!-- start of footer -->
   <footer class="mx-auto h-full w-full md:w-1/2 border-t-4 mt-8">
-    <div class="flex mt-16">
+    <div class=" flex-wrap md:flex mt-16">
       <div class="ml-8 flex flex-col space-y-4 justify-start">
         <h4 class="text-lg font-bold">PAGES</h4>
         <nav>
@@ -100,21 +110,28 @@
     </div>
   </footer>
 </template>
-im
+
 <script>
+ import NavBarResponsive from './components/NavBarResponsive.vue'
 export default {
   name: "App",
-  components: {},
+   components: {NavBarResponsive},
   data() {
     return {
       lightMode: true,
       darkMode: false,
+      headerBar: true,
     };
   },
   methods: {
     toggleMode() {
       this.lightMode = !this.lightMode;
       this.darkMode = !this.darkMode;
+    },
+    toggleNavbar(){
+       this.headerBar =!this.headerBar;
+
+
     },
   },
 };
