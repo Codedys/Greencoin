@@ -16,7 +16,7 @@
       </p>
     </div>
     <div class="mt-8 space-x-10 flex items-center justify-center">
-      <button  class="text-xl p-4 border-2 bg-white rounded-lg text-black">
+      <button @click="downloadCV"  class="text-xl p-4 border-2 bg-white rounded-lg text-black">
         Resume
       </button>
       
@@ -34,6 +34,7 @@
 
 
 <script>
+import cvFile from '../assets/JacksonObere.pdf';
 import ContactForm from '../components/ContactForm.vue'
 export default {
   name:"Home",
@@ -47,6 +48,20 @@ export default {
   methods: {
     displayForm() {
       this.showForm = !this.showForm
+    },
+    downloadCV() {
+      
+      const link = document.createElement('a');
+      link.href = cvFile; 
+      link.target = '_blank'; 
+      
+
+      
+      document.body.appendChild(link);
+      link.click();
+
+      
+      document.body.removeChild(link);
     }
   },
 

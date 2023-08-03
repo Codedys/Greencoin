@@ -2,7 +2,7 @@
   <div class="fixed top-0 bg-white h-screen w-screen bg-opacity-50 m">
     <form
       @submit.prevent="submitForm"
-      class="h-4/5 w-96 mx-auto mt-16 bg-white rounded-lg border-2"
+      class="h-4/5 w-full md:w-96 mx-auto mt-16 bg-white rounded-lg border-2"
     >
       <div class="flex justify-end mt-2 mr-2">
         <i @click="hideForm"
@@ -71,9 +71,10 @@ export default {
           this.formData.name = '';
           this.formData.email = '';
           this.formData.message = '';
-
+          this.formData.subject = '';
+          this.$emit('closeForm');
           
-          alert('Message sent successfully!');
+          alert('Thank you for Contacting me! I will get back shortly');
         } else {
          
           alert('Error sending the message. Please try again later.');

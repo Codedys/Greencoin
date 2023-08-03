@@ -6,10 +6,10 @@
    
     <nav class="ml-4 mt-4">
       <ul class="text-black font-bold space-y-4">
-        <li class="pl-2 active:bg-blue-400   hover:text-blue-600 mr-4"><router-link to="/">Home</router-link></li>
-        <li class="pl-2 active:bg-blue-400 hover:bg-blue-400 hover:rounded hover:text-blue-600 mr-4"><router-link to="/projects">Projects</router-link></li>
-        <li class="pl-2 active:bg-blue-400 hover:bg-blue-400 hover:rounded hover:text-blue-600 mr-4"><router-link to="/about">About</router-link></li>
-        <li class="pl-2 active:bg-blue-400 hover:bg-blue-400 hover:rounded hover:text-blue-600 mr-4"><router-link to="/blog">Blog</router-link></li>
+        <li @click ="close" class="pl-2 active:bg-blue-400   hover:text-blue-600 mr-4"><router-link to="/">Home</router-link></li>
+        <li @click ="close" class="pl-2 active:bg-blue-400 hover:bg-blue-400 hover:rounded hover:text-blue-600 mr-4"><router-link to="/projects">Projects</router-link></li>
+        <li @click ="close" class="pl-2 active:bg-blue-400 hover:bg-blue-400 hover:rounded hover:text-blue-600 mr-4"><router-link to="/about">About</router-link></li>
+        <li @click ="close" class="pl-2 active:bg-blue-400 hover:bg-blue-400 hover:rounded hover:text-blue-600 mr-4"><router-link to="/blog">Blog</router-link></li>
       </ul>
     </nav>
   </div>

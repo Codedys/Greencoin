@@ -52,9 +52,9 @@
   
   <router-view />
   <!-- start of footer -->
-  <footer class="mx-auto h-full w-full md:w-1/2 border-t-4 mt-8">
-    <div class=" flex-wrap md:flex mt-16">
-      <div class="ml-8 flex flex-col space-y-4 justify-start">
+  <footer class="mx-auto h-full w-full border-t-4 mt-8 md:w-1/2 lg:4/5 ">
+    <div class=" mt-6 flex ">
+      <div class="ml-8 flex flex-col flex-1 space-y-4 justify-start">
         <h4 class="text-lg font-bold">PAGES</h4>
         <nav>
           <ul class="text-custom-blue font-bold space-y-4">
@@ -65,48 +65,43 @@
           </ul>
         </nav>
       </div>
-
-      <div class="flex flex-1 justify-center">
-        <div class="space-y-4 flex flex-col">
-          <h4 class="text-lg font-bold">CONTACT</h4>
-          <ul class="text-custom-blue font-bold space-y-4">
-            <li>jacksongeraldobere@gmail.com</li>
-            <li>+254759333587</li>
-          </ul>
-        </div>
-      </div>
-      <div class="mr-8 flex justify-end">
-        <div class="flex space-y-4 flex-col">
+      
+        <div class=" flex space-y-4 flex-col mr-8">
           <h4 class="text-lg font-bold">INFO DIET</h4>
           <ul class="text-custom-blue font-bold space-y-4">
             <li>Bookmarks</li>
             <li>Newsletter</li>
           </ul>
         </div>
-      </div>
+      
     </div>
     <div class="flex items-center justify-center mt-8 space-x-10 mb-8">
       <a
         href="https://www.linkedin.com/in/jackson-obere-b04284236/"
         target="_blank"
-        class="text-blue-500 text-4xl hover:text-8xl transition-all duration-500 ease-in-out"
+        class="text-blue-500 text-4xl "
       >
         <i class="fab fa-linkedin"></i>
       </a>
       <a
         href="https://twitter.com/Jackson__Gerald"
         target="_blank"
-        class="text-blue-500 text-4xl hover:text-8xl transition-all duration-500 ease-in-out"
+        class="text-blue-500 text-4xl "
       >
         <i class="fab fa-twitter"></i>
       </a>
       <a
         href="https://github.com/Gerald-006"
         target="_blank"
-        class="text-4xl hover:text-8xl transition-all duration-500 ease-in-out"
+        class="text-4xl "
       >
         <i class="fab fa-github"></i>
       </a>
+    </div>
+    <div class="my-8 text-center">
+
+      © 2023 Jackson J.G. All rights reserved
+           
     </div>
   </footer>
 </template>
