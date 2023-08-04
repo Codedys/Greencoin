@@ -5,7 +5,7 @@
       alt="Trust me I am handsome"
       class="rounded-full h-44 w-44 mt-8 mx-auto border-8 border-blue-600"
     />
-    <div class="text-center pt-8 text-lg ">
+    <div class="text-center pt-8 text-lg">
       <h1><strong>Hello,I'm Jackson 👋</strong></h1>
       <p>
         I am a software engineer currently pursuing Computer Science at Kenyatta
@@ -16,55 +16,51 @@
       </p>
     </div>
     <div class="mt-8 space-x-10 flex items-center justify-center">
-      <button @click="downloadCV"  class="text-xl p-4 border-2 bg-white rounded-lg text-black">
+      <button
+        @click="downloadCV"
+        class="text-xl p-4 border-2 bg-white rounded-lg text-black"
+      >
         Resume
       </button>
-      
-      <button @click="displayForm"  class="customcolor text-xl p-4 text-white rounded-lg">
+
+      <button
+        @click="displayForm"
+        class="customcolor text-xl p-4 text-white rounded-lg"
+      >
         Contact me
       </button>
-      
     </div>
-     <div v-if="showForm">
-    <contactForm @closeForm="displayForm"/>
+    <div v-if="showForm">
+      <contactForm @closeForm="displayForm" />
+    </div>
   </div>
-  </div>
-  
 </template>
 
-
 <script>
-import cvFile from '../assets/JacksonObere.pdf';
-import ContactForm from '../components/ContactForm.vue'
+import cvFile from "../assets/JacksonObere.pdf";
+import ContactForm from "../components/ContactForm.vue";
 export default {
-  name:"Home",
+  name: "Home",
   components: { ContactForm },
   data() {
     return {
       showForm: false,
-    
     };
   },
   methods: {
     displayForm() {
-      this.showForm = !this.showForm
+      this.showForm = !this.showForm;
     },
     downloadCV() {
-      
-      const link = document.createElement('a');
-      link.href = cvFile; 
-      link.target = '_blank'; 
-      
+      const link = document.createElement("a");
+      link.href = cvFile;
+      link.target = "_blank";
 
-      
       document.body.appendChild(link);
       link.click();
 
-      
       document.body.removeChild(link);
-    }
+    },
   },
-
-
-}
+};
 </script>
