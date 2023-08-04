@@ -31,7 +31,7 @@
       I have experience working with PostgreSQL. 🛠️ Frameworks: I have hands-on
       experience working with several frameworks, such as Vue.js, Ruby on Rails,
       Tailwind CSS, and React.The site you're visiting right now, built with Vue.JS
-       and Tailwind CSS, is hosted on render.
+       and Tailwind CSS, is hosted on vercel.
     </div>
   </div>
 </template>
