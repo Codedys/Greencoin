@@ -25,7 +25,7 @@
           class="p-3 hover:bg-blue-300 hover:rounded active:border-b-4 active:border-blue-500"
           active-class="active-link"
           exact-active-class="active-link"
-          >Projects</router-link
+          >Products</router-link
         >
         <router-link
           to="/about"
@@ -100,7 +100,7 @@
     </div>
     <div class="my-8 text-center">
 
-      © 2023 Jackson J.G. All rights reserved
+      © 2024 Somi All rights reserved
            
     </div>
   </footer>
