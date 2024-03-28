@@ -90,13 +90,13 @@
       >
         <i class="fab fa-twitter"></i>
       </a>
-      <a
+      <!-- <a
         href="https://github.com/Gerald-006"
         target="_blank"
         class="text-4xl "
       >
         <i class="fab fa-github"></i>
-      </a>
+      </a> -->
     </div>
     <div class="my-8 text-center">
 
